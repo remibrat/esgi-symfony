@@ -13,3 +13,7 @@ $ find . -name "*.sh" | xargs dos2unix
 
 - docker-compose ps
 - docker-compose logs -f [CONTAINER(php|node|nginx|db)]
+
+## Mettre à jour bdd
+
+- docker-compose exec php bin/console d:s:u --dump-sql
